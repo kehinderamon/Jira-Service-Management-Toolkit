@@ -1,12 +1,12 @@
 Jira Service Management Ticket Toolkit
-A Python command-line tool that manages real IT support tickets in Jira Service Management (Jira Cloud) through its official REST API — create tickets, search/filter with JQL, change status through the actual workflow, assign to a technician, comment, export to CSV, and pull a quick stats dashboard. No custom database: every ticket lives in your real JSM project, exactly like it would at a company using Jira for their service desk.
+A Python command-line tool that manages real IT support tickets in Jira Service Management (Jira Cloud) through its official REST API, create tickets, search/filter with JQL, change status through the actual workflow, assign to a technician, comment, export to CSV, and pull a quick stats dashboard. No custom database: every ticket lives in your real JSM project, exactly like it would at a company using Jira for their service desk.
 Why this project
-Jira Service Management is one of the most widely used ITSM tools in the industry. This project shows you can go beyond just clicking around Jira — you can script against its REST API to automate the repetitive parts of the job: bulk status changes, scheduled reports, CSV exports for management, or integrations with other systems. That's a skill that sets a support technician apart.
+Jira Service Management is one of the most widely used ITSM tools in the industry. This project shows you can go beyond just clicking around Jira, you can script against its REST API to automate the repetitive parts of the job: bulk status changes, scheduled reports, CSV exports for management, or integrations with other systems. That's a skill that sets a support technician apart.
 Features
 Create tickets with summary, description, priority, and labels (used as categories, e.g. `network`, `hardware`)
-Search/filter tickets using JQL (Jira Query Language) — e.g. `status = "In Progress"` or `priority = High`
+Search/filter tickets using JQL (Jira Query Language),  e.g. `status = "In Progress"` or `priority = High`
 View full ticket detail
-Change ticket status — dynamically fetches the real transitions available for that ticket's workflow (so it always matches your project's actual setup, not a hardcoded guess)
+Change ticket status, dynamically fetches the real transitions available for that ticket's workflow (so it always matches your project's actual setup, not a hardcoded guess)
 Assign tickets to a technician by their Jira account email
 Add comments to a ticket
 Export tickets to CSV for reporting
@@ -60,7 +60,7 @@ JIRA_PROJECT_KEY=ITSD
 ```bash
 python3 jsm_toolkit.py
 ```
-You'll see a numbered menu — pick an option and follow the prompts.
+You'll see a numbered menu, pick an option and follow the prompts.
 6. Run the tests
 These use mocked API responses, so they work even without a `.env` file configured:
 ```bash
@@ -91,4 +91,4 @@ Slack notifications when a Highest-priority ticket is created
 SLA breach detection (flag tickets open longer than X hours based on priority)
 A scheduled script (cron) that emails a daily ticket summary report
 License
-MIT — free to use, modify, and share.
+MIT, free to use, modify, and share.
