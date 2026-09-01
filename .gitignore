@@ -1,0 +1,5 @@
+.env
+jsm_tickets_export.csv
+*.pyc
+__pycache__/
+.DS_Store
